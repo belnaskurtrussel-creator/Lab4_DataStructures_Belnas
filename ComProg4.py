@@ -36,8 +36,20 @@ print(f"After Append: {number_sequence}")
 
 
 
-print("Task 7") 
 print("Task 6") 
+new_numbers = [base_val + 5, sys_config["vector_dim"], base_val] 
+number_sequence.extend(new_numbers) 
+print(f"After Extend: {number_sequence}") 
+# Count occurrences of the base value 
+base_count = number_sequence.count(base_val) 
+print(f"Occurrences of {base_val}: {base_count}") 
+# Sort the sequence in ascending order 
+number_sequence.sort() 
+print(f"Sorted Sequence: {number_sequence}")
+
+
+
+print("Task 7") 
 # Define an immutable tuple using system parameters 
 fixed_coordinates = (sys_config["vector_dim"], sys_config["base_seed"], 0) 
 print(f"Fixed Coordinates: {fixed_coordinates}") 
